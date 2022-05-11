@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Prune Docker data') {
       steps {
-        'docker system prune -a --volumes -f'
+        sh 'docker system prune -a --volumes -f'
       }
     }
         stage('Build') {
