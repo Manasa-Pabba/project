@@ -12,13 +12,13 @@ pipeline {
     }
         stage('Start container') {
       steps {
-        sh 'docker-compose up -d'
+        bat 'docker-compose up -d --no-color --wait'
         
       }
     }
         stage('Run tests against the container') {
       steps {
-        sh 'curl http://localhost:8501'
+        bat 'curl http://localhost:8501'
       }
     }
     }
