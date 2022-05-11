@@ -6,7 +6,7 @@ pipeline {
         sh '''
           docker version
           docker info
-          dockercompose version 
+          docker_compose version 
         '''
       }
     }
