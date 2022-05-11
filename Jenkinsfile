@@ -4,25 +4,22 @@ pipeline {
     
 
     stages {
-        stage('Prune Docker data') {
+             
+        stage('pull postgres') {
       steps {
-        bat 'docker system prune -a --volumes -f'
+        bat 'docker pull manasa6900/stock_proj:1'
       }
     }
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        stage('Start container') {
+      steps {
+        sh 'docker-compose up -d'
+        
+      }
+    }
+        stage('Run tests against the container') {
+      steps {
+        sh 'curl http://localhost:8501'
+      }
+    }
     }
 }
