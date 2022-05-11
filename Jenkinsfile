@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    
+    stage('Prune Docker data') {
+      steps {
+        sh 'docker system prune -a --volumes -f'
+      }
+    }
 
     stages {
         stage('Build') {
