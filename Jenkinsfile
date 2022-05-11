@@ -1,13 +1,14 @@
 pipeline {
     agent any
     
-    stage('Prune Docker data') {
+    
+
+    stages {
+        stage('Prune Docker data') {
       steps {
         sh 'docker system prune -a --volumes -f'
       }
     }
-
-    stages {
         stage('Build') {
             steps {
                 echo 'Building..'
