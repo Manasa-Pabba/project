@@ -1,6 +1,6 @@
 version: "2"
 services:
-  manasa6900/app_repo:latest:
+  app:
     image: app
     restart: on-failure
     depends_on:
@@ -10,5 +10,5 @@ services:
 
     
   db:
-    image: manasa6900/stock_proj:1
+    image: manasa6900/postgres:latest
     
