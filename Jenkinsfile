@@ -21,7 +21,7 @@ pipeline {
         
         stage('login'){
             steps{
-                bat 'echo $DOCKHUB_CREDS_PSW'
+                bat 'echo $DOCKHUB_CREDS_USR'
             }
         }
         
