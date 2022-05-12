@@ -21,7 +21,9 @@ pipeline {
         
         stage('login'){
             steps{
-                bat 'echo $DOCKHUB_CREDS_USR'
+                withCredentials([string(credentialsId: 'dockerhub-manasa', variable: 'DCRED'),string(credentialsId: 'dockerhub-manasa', variable: 'DCRED')]) {
+                    bat 'echo ${DCRED}'
+                }
             }
         }
         
