@@ -22,7 +22,7 @@ pipeline {
         stage('login'){
             steps{
                 
-                bat "echo | set /p=${env.DOCKHUB_CREDS_PSW} | docker login --username ${env.DOCKHUB_CREDS_USR} --password-stdin"
+                bat 'echo | set /p="${env.DOCKHUB_CREDS_PSW}" | docker login --username ${env.DOCKHUB_CREDS_USR} --password-stdin'
             }
         }
         
