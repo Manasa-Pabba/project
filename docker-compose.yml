@@ -1,6 +1,6 @@
 version: "2"
 services:
-  app:
+  manasa6900/app_repo:latest:
     image: app
     restart: on-failure
     depends_on:
