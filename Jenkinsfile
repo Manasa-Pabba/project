@@ -27,8 +27,8 @@ pipeline {
         
         stage('push'){
             steps{
-                bat 'docker tag db manasa6900/postgres:latest'
-                bat 'docker push manasa6900/postgres:latest'
+                bat 'docker tag app manasa6900/app_repo:latest'
+                bat 'docker push manasa6900/app_repo:latest'
             }
         }
                 
