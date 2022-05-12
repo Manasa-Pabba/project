@@ -16,11 +16,6 @@ pipeline {
         
       }
     }
-        stage('Run tests against the container') {
-      steps {
-        bat 'timeout 20'
-        bat 'curl http://localhost:8501'
-      }
-    }
+        
     }
 }
