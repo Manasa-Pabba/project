@@ -31,11 +31,6 @@ pipeline {
                 bat 'docker tag app manasa6900/app_repo:latest'
                 bat 'docker push manasa6900/app_repo:latest'
             }
-        }
-                
-                
-            
-        
-        
+        } 
     }
 }
