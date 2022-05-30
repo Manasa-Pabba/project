@@ -32,5 +32,5 @@ pipeline {
                 bat 'docker push manasa6900/app_repo:latest'
             }
         } 
-    }
+    } 
 }
