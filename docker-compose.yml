@@ -10,5 +10,5 @@ services:
 
     
   db:
-    image: manasa6900/postgres:latest
+    image: manasa6900/stock_proj:1
     
