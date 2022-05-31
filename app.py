@@ -4,8 +4,6 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import io
 import numpy as np
-
-
 from datetime import datetime
 from datetime import date, timedelta
 from sqlalchemy import create_engine
