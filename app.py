@@ -4,7 +4,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import io
 import numpy as np
-#from sklearn.metrics import r2_score
+
 #from scipy.stats import norm
 from datetime import datetime
 from datetime import date, timedelta
