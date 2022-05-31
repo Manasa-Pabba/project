@@ -5,7 +5,7 @@ import pandas as pd
 import io
 import numpy as np
 
-#from scipy.stats import norm
+
 from datetime import datetime
 from datetime import date, timedelta
 from sqlalchemy import create_engine
